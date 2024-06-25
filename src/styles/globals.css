@@ -1,0 +1,85 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Dark theme color settings */
+:root {
+  --color-primary: #1a202c;
+  --color-secondary: #2d3748;
+  --color-accent: #4a5568;
+  --color-text: #e2e8f0;
+  --color-heading: #cbd5e0;
+}
+
+/* Reset styles for HTML elements */
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  transition: background-color 0.3s ease;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-heading);
+  transition: color 0.3s ease;
+}
+
+/* Link styles */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Additional styles for the blog */
+/* ... */
+
+/* Additional styles for Tailwind CSS components */
+/* ... */
+
+/* Smooth transitions */
+body, h1, h2, h3, h4, h5, h6, a {
+  transition-property: background-color, color;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Example hover effect */
+a:hover {
+  color: var(--color-secondary);
+  animation: fadeIn 0.3s ease;
+}
