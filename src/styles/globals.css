@@ -48,12 +48,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Additional styles for the blog */
-/* ... */
-
-/* Additional styles for Tailwind CSS components */
-/* ... */
-
 /* Smooth transitions */
 body, h1, h2, h3, h4, h5, h6, a {
   transition-property: background-color, color;
